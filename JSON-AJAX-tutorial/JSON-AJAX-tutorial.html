@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8"> <!-- name = "viewport" content = "width=device-width, initial-scale=1" /> -->
+	<title>JSON and AJAX</title>
+</head>
+<body>
+	
+<header>
+	<h1>JSON and AJAX</h1>
+	<button id="btn">Fetch Info for 3 New Animals</button>
+</header>
+
+<div id="animal-info"></div>
+<script>
+let pageCounter = 1;
+const btn = document.querySelector('#btn');
+const animalContainer = document.querySelector('#animal-info');
+
+btn.addEventListener('click', function(){
+	var ourRequest = new XMLHttpRequest();
+	ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
+	ourRequest.onload = function(){
+		let ourData = JSON.parse(ourRequest.responseText);
+		renderHTML(ourData);
+	};
+	ourRequest.send();
+	pageCounter ++;
+	if (pageCounter > 3){
+		btn.style.display = 'none';
+	}
+});
+
+function renderHTML(data) {
+	let htmlString = "";
+
+	for (let i = 0; i < data.length; i++) {
+		htmlString += `<p>${data[i].name} is a ${data[i].species} that likes to eat `;
+		
+		for(j=0; j < data[i].foods.likes.length; j++){
+			if (j === 0){
+				htmlString += data[i].foods.likes[j];
+			} else {
+				htmlString += ` and ${data[i].foods.likes[j]}`;
+			}
+		}
+		
+		htmlString += ' and dislikes ';
+
+		for(j=0; j < data[i].foods.likes.length; j++){
+			if (j === 0){
+				htmlString += data[i].foods.dislikes[j];
+			} else {
+				htmlString += ` and ${data[i].foods.dislikes[j]}`;
+			}
+		}
+		htmlString += ".</p>";
+	}
+
+	animalContainer.insertAdjacentHTML('beforeend', htmlString);
+}
+
+</script>
+</body>
+</html>
