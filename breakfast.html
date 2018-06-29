@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<title>Breakfast</title>
+	<!-- BOOTSTRAP: -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- FONT AWESOME: -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!-- MY STYLING: -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/categories.css">
+</head>
+<body>
+	<!-- NAVIGATION BAR -->
+<!-- <nav class="navbar navbar-inverse "> 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Breakfast</a></li>
+        <li><a href="#">Appetizers</a></li> 
+        <li><a href="#">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-inverse "> <!-- navbar-fixed-top -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li> 
+        <li><a href="entrees.html">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE CONTENT -->
+<div class="recipe-container" id="first-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/breakfast-potatoes.jpg" alt="potatoes"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Home Fries</div>
+    <div class="desc">
+      <p>Make this diner classic at home.  Made with pan- or skilled-fried potatoes, onion, and peppers.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/avocado-toast.jpg" alt="avocado-toast"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Avocado Toast</div>
+    <div class="desc">
+      <p>Try out this delicious new Millennial fad and get a healthy start to your day!
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/fried-eggs.jpg" alt="fried eggs"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Fried Eggs</div>
+    <div class="desc">
+      <p>Just your basic fried egg recipe.  It's never too late to learn how to make this staple breakfast dish.
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/scrambled-eggs.jpg" alt="scrambled eggs"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Scrambled Eggs</div>
+    <div class="desc">
+      <p>Another basic egg recipe that every adult should know. Except adults who dislike eggs...they get a pass.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/french-toast.jpg" alt="french toast"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">French Toast</div>
+    <div class="desc">
+      <p>For those who love bread, eggs, and efficiency.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container" id="last-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/fruit-smoothie.jpg" alt="fruit smoothie"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Fruit Smoothie</div>
+    <div class="desc">
+      <p>Brag about how healthy you are after drinking blended fruits and veggies with yogurt.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<!-- DESKTOP CONTENT -->
+<div class="grid-container">
+  
+  <div class="grid-item">
+    <div id="breakfast-potatoes" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Home Fries</h2>
+      <p>Make this diner classic at home.  Made with pan- or skilled-fried potatoes, onion, and peppers.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="avocado-toast" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Avocado Toast</h2>
+      <p>Try out this delicious new Millennial fad and get a healthy start to your day!</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="fried-eggs" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Fried Eggs</h2>
+      <p>Just your basic fried egg recipe.  It's never too late to learn how to make this staple breakfast dish.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="scrambled-eggs" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Scrambled Eggs</h2>
+      <p>Another basic egg recipe that every adult should know. Except adults who dislike eggs...they get a pass.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="french-toast" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>French Toast</h2>
+      <p>For those who love bread, eggs, and efficiency.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="fruit-smoothie" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Fruit Smoothie</h2>
+      <p>Brag about how healthy you are after drinking blended fruits and veggies with yogurt.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="recipe-7" class="desktop-photo"></div>
+   <div class="recipe-content">
+      <h2>Recipe 7</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="recipe-8" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Recipe 8</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p id="socialMedia">&copy; Matt Russo</p>
+</footer>
+
+<script>
+  $(document).ready(function(){
+
+    $(".heart-desktop").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })    
+
+    $(".favorite").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })   
+  });
+</script>
+
+</body>
+</html>

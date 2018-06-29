@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------MAIN STYLING BELOW------------------ */
+@font-face{
+	src: url("../fonts/quadranta.otf");
+	font-family: quadranta; /*my designated name*/
+}
+
+.navbar{
+	opacity: 1 /*was 0.8*/;
+	height:8%;
+	margin-bottom: 0;
+}
+
+#SC-logo{
+	height: 45px;
+}
+
+body, html{
+	height:100%;
+	margin:0.75%;
+	margin-top: 0;
+	font-size:16px;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#f2f2f2;
+	background-color: #e0ebeb
+}
+
+.parallaxImg{
+	background-image: url("../images/parallaxImg2.jpg");
+	min-height:92%;
+	position: relative;
+	opacity: 0.75;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*this makes it parallax*/
+}
+
+#logo > img{
+	height: 150px;
+	position: absolute;
+	top: 20%;
+	left: 43%; /*find better way to center*/
+}
+
+.ptext{
+	position: absolute; /*positioned relative to ancestor element*/
+	top: 50%; /*vertically centered*/
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 27px;
+	letter-spacing: 8px;  
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+#scroll-down{
+	position: absolute;
+	top: 85%;
+	left: 50%; /*need the button's origin to be center */
+	transform: translateX(-30px);
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	transition: opacity .3s;
+	/*height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	background: #fff;*/	
+}
+
+#scroll-down:hover {opacity: .5;}
+
+@media(max-width: 480px){
+	.parallaxImg{
+		background-image: url("../images/parallaxImg1.jpeg");
+	}
+	#logo > img{
+		left: 27%;
+		top: 15%;
+		margin-bottom: 10px;
+	}	
+}
+
+/* ------------------INDEX PAGE 2------------------- */
+#icon-container{
+	display: flex;
+	align-items: center;
+	height: 25%;
+	width: 100%;
+	background: #ff9900;
+}
+
+.kitchen-icon{
+	flex: 1;
+	flex-basis: 30%;
+	justify-content: space-between;
+}
+
+@media(min-width: 480px) {
+	#icon-container{
+		display: none;
+	}
+}
+
+#welcome-container{
+	width: 100%;
+	height: 75%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	background: #3385ff;
+}
+
+h2{
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: quadranta;
+	line-height: 1.2;
+	padding-top: 30px;
+}
+
+@media(max-width: 480px){
+	h2{
+		padding-top: 10px;
+	}
+}
+
+#welcome{
+	color: #fff;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+}
+
+#round-link-container{
+	margin-top: 30px;
+	padding: 0 5px 10px 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*-----------desktop styling---------*/
+@media(min-width: 480px) {
+	#round-link-container{
+		display: none;
+	}
+	#welcome{
+		padding: 15px 300px 30px;
+		font-size: 20px;
+	}
+}
+
+.roundLink{
+    display: block;
+    flex-basis: 30%;
+    height: 110px;
+    width: 110px;
+    background: red;
+    color: #000;
+    font-family: Courier;
+    font-weight: bold;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 110px; 
+    margin: 0 auto; 
+    transition-property: opacity, color;
+    transition-duration: .35s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+}
+
+.roundLink:hover{
+	opacity: 0.85;
+	color: #000;
+	text-decoration: none;
+}
+
+.roundLink:active{
+	opacity: 0.85;
+	color: #000;
+	text-decoration: none;
+	height: 110px;
+	width: 110px;
+	line-height: 110px;
+}
+/*add .roundLink to tab index for active pseudoclass to work*/
+
+.category{
+		background: gray;
+		border: black 1px solid;
+}
+
+#circles{margin: 1%;}
+
+#breakfast	{background: #c0dbe2;}
+
+#apps		{background: #cdf1c3;}
+
+#entrees	{background: #ccb9da;}
+
+#column-link-container{
+	display: flex;
+	width: 100%;
+
+}
+
+@media(max-width: 480px){
+	#column-link-container{
+		display: none;
+	}
+}
+
+.desktop-list{
+	flex: 1; /*default*/
+	flex-basis: 30%;
+	justify-content: space-between;
+	color: #000;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 80px;
+}
+
+.desktop-list:first-child{background: #c0dbe2;}
+.desktop-list:nth-child(2){background: #ccb9da;}
+.desktop-list:last-child{background: #cdf1c3;}
+
+h3{
+	text-transform: uppercase;
+	font-family: Georgia;
+	font-size: 26px;
+	letter-spacing: 1px;
+	padding-top: 12px;
+	padding-bottom: 7px;
+
+}
+
+.list li{
+	border: 2px #000 solid;
+	width: 80%;
+	margin: 5px auto;
+	border-radius: 5px;
+	font-family: Courier;
+	font-size: 125%;
+	padding: 5px 0;
+}
+
+.list li:hover{
+	opacity: .6;
+}
+
+.list li a{
+	text-decoration: none;
+	color: #000;
+}
+
+footer{
+	display: flex;
+	height: 25%;
+	width: 100%;
+	background: #808080;
+}
+
+#socialMedia{
+	margin: auto;
+	color: #fff;
+}
