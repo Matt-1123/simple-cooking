@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<title>Entrees</title>
+	<!-- BOOTSTRAP: -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- FONT AWESOME: -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!-- MY STYLING: -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="categories.css">
+</head>
+<body>
+  
+	<!-- NAVIGATION BAR -->
+<!-- <nav class="navbar navbar-inverse "> 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Breakfast</a></li>
+        <li><a href="#">Appetizers</a></li> 
+        <li><a href="#">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-inverse "> <!-- navbar-fixed-top -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li> 
+        <li class="active"><a href="entrees.html">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE CONTENT -->
+<div class="recipe-container" id="first-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/buffalo-chicken-pizza.jpg" alt="buffalo chicken pizza"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Buffalo Chicken Pizza</div>
+    <div class="desc">
+      <p>It's not delivery. It's also not DiGiorno. It's delicious homemade buffalo chicken pizzza.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/chx-cutlets.jpg" alt="breaded chicken cutlets"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Breaded Chicken Cutlets</div>
+    <div class="desc">
+      <p>These are an easy source of protein that go great with a bunch of sides such as pasta and rice, or even on a sandwich.
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/meatloaf.jpg" alt="meatloaf"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Meatloaf</div>
+    <div class="desc">
+      <p>Ground beef, onion, ketchup, etc, formed into a loaf and baked. A dinner classic.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/salmon.jpg" alt="salmon with sun-dried tomatoes"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Salmon with Sun-Dried Tomatoes</div>
+    <div class="desc">
+      <p>This fish is tasty and healthy - high in protein, omega-3 fatty acids, and vitamin D. Serve over rice for a good, filling meal.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/spaghetti-and-meatballs.jpg" alt="spaghetti and meatballs"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Spaghetti and Meatballs</div>
+    <div class="desc">
+      <p>This Italian-American dish is a classic and a favorite among kids and adults alike!</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container" id="last-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/entrees/taboullet-salad.jpg" alt="taboullet salad"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Chickpea Taboullet Salad</div>
+    <div class="desc">
+      <p>Roasted chickpeas on top of a Levantine vegetarian salad consisting of chopped parsley, tomato, and onion.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<!-- DESKTOP CONTENT -->
+<div class="grid-container">
+  
+  <div class="grid-item">
+    <div id="buffalo-chicken-pizza" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Buffalo Chicken Pizza</h2>
+      <p>It's not delivery. It's also not DiGiorno. It's delicious homemade buffalo chicken pizzza.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="chx-cutlets" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Breaded Chicken Cutlets</h2>
+      <p>These are an easy source of protein that go great with a bunch of sides such as pasta and rice, or even put it on a sandwich.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="meatloaf" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Meatloaf</h2>
+      <p>Ground beef, onion, ketchup, etc, formed into a loaf and baked. A dinner classic.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="salmon" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Salmon with Sun-Dried Tomatoes</h2>
+      <p>This fish is tasty and healthy - high in protein, omega-3 fatty acids, and vitamin D. Serve over rice for a good, filling meal.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="spaghetti-and-meatballs" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Spaghetti and Meatballs</h2>
+      <p>This Italian-American dish is a classic and a favorite among kids and adults alike!</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="taboullet-salad" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Chickpea Taboullet Salad</h2>
+      <p>Roasted chickpeas on top of a Levantine vegetarian salad consisting of chopped parsley, tomato, and onion.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="recipe-7" class="desktop-photo"></div>
+   <div class="recipe-content">
+      <h2>Recipe 7</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="recipe-8" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Recipe 8</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p id="socialMedia">&copy; Matt Russo</p>
+</footer>
+
+<script>
+  $(document).ready(function(){
+
+    $(".heart-desktop").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })    
+
+    $(".favorite").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })   
+  });
+</script>
+
+</body>
+</html>

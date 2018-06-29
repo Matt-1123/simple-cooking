@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<title>Appetizers</title>
+	<!-- BOOTSTRAP: -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- FONT AWESOME: -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!-- MY STYLING: -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="categories.css">
+</head>
+<body>
+  
+	<!-- NAVIGATION BAR -->
+<!-- <nav class="navbar navbar-inverse "> 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Breakfast</a></li>
+        <li><a href="#">Appetizers</a></li> 
+        <li><a href="#">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-inverse "> <!-- navbar-fixed-top -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-fire
+        "></span> Simple Cooking</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li class="active"><a href="appetizers.html">Appetizers</a></li> 
+        <li><a href="entrees.html">Entrees</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorites</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE CONTENT -->
+<div class="recipe-container" id="first-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/garlicBread.jpeg" alt="garlic bread"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Garlic Bread</div>
+    <div class="desc">
+      <p>Bread is delicious. Garlic is delicious. Combine them!</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/caesar-salad.jpg" alt="avocado-toast"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Caesar Salad</div>
+    <div class="desc">
+      <p>A green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, garlic, Parmesan cheese, and black pepper.
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/buff-dip.jpeg" alt="buffalo chicken dip"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Buffalo Chicken Dip</div>
+    <div class="desc">
+      <p>A crowd favorite and easy to make. Hope you're not counting calories for this one...
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/quesadillas.jpg" alt="Chicken Quesadillas"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Chicken Quesadillas</div>
+    <div class="desc">
+      <p>A tortilla filled with cheese, chicken, and whatever other toppings you like, and then grilled. Especially popular in Mexico and the US. The rest of the world is missing out.
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/bacon-wrapped-scallops.jpg" alt="Bacon-wrapped scallops"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Bacon-Wrapped Scallops</div>
+    <div class="desc">
+      <p>Delicious bacon wrapped around delicious scallops, then baked. Simple yet brilliant.
+      </p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container" id="last-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/mussels.jpg" alt="mussels"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Mussels in White Wine Sauce</div>
+    <div class="desc">
+      <p>Mussels cooked in a white wine garlic-butter sauce.</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container" id="last-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/crab-rangoon.jpg" alt="Crab rangoon"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Crab Rangoon</div>
+    <div class="desc">
+      <p>Crab and cream cheese in a wonton shell and served with sweet and sour sauce. This one takes a little bit of dexterity in its preparation, but it's well worth it!</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<div class="recipe-container" id="last-container">
+  <div class="colA">
+    <div class="photo">
+      <img src="images/appetizers/honey-rst-almonds.jpg" alt="honey roasted almonds"/>
+    </div>
+    <div class="favorite">
+      <button><i class="far fa-heart fa-2x"></i></button>
+    </div>
+  </div>
+  <div class="colB">
+    <div class="title">Honey Roasted Almonds</div>
+    <div class="desc">
+      <p>Maybe not as healthy as raw almonds, but still good for you and much more delicious!</p>
+    </div>
+    <div class="button">
+      <button>View Recipe</button>
+    </div>
+  </div>
+</div>
+
+<!-- DESKTOP CONTENT -->
+<div class="grid-container">
+  
+  <div class="grid-item">
+    <div id="garlic-bread" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Garlic Bread</h2>
+      <p>Bread is delicious. Garlic is delicious. Combine them!</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="caesar-salad" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Caesar Salad</h2>
+      <p>A green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, garlic, Parmesan cheese, and black pepper.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="buff-dip" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Buffalo Chicken Dip</h2>
+      <p>A crowd favorite and easy to make. Hope you're not counting calories for this one...</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="quesadillas" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Chicken Quesadillas</h2>
+      <p>A tortilla filled with cheese, chicken, and whatever other toppings you like, and then grilled. Especially popular in Mexico and the US. The rest of the world is missing out.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="bacon-wrapped-scallops" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Bacon-Wrapped Scallops</h2>
+      <p>Delicious bacon wrapped around delicious scallops, then baked. Simple yet brilliant.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="mussels" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Mussels in White Wine Sauce</h2>
+      <p>Mussels cooked in a white wine garlic-butter sauce.</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="crab-rangoon" class="desktop-photo"></div>
+   <div class="recipe-content">
+      <h2>Recipe 7</h2>
+      <p>Crab and cream cheese in a wonton shell and served with sweet and sour sauce. This one takes a little bit of dexterity in its preparation, but it's well worth it!</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div id="honey-rst-almonds" class="desktop-photo"></div>
+    <div class="recipe-content">
+      <h2>Honey Roasted Almonds</h2>
+      <p>Maybe not as healthy as raw almonds, but still good for you and much more delicious!</p>
+      <div class="heart-desktop"><button><i class="far fa-heart fa-2x"></i></button></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p id="socialMedia">&copy; Matt Russo</p>
+</footer>
+
+<script>
+  $(document).ready(function(){
+
+    $(".heart-desktop").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })    
+
+    $(".favorite").click(function(){
+      $(this).find('i').toggleClass('far fas')
+    })   
+  });
+</script>
+
+</body>
+</html>
