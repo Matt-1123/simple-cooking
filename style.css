@@ -76,7 +76,7 @@ body, html{
 }
 
 .parallaxImg{
-	background-image: url("../images/parallaxImg2.jpg");
+	background-image: url("images/parallaxImg.jpg");
 	min-height:92%;
 	position: relative;
 	opacity: 0.75;
@@ -129,7 +129,7 @@ body, html{
 
 @media(max-width: 480px){
 	.parallaxImg{
-		background-image: url("../images/parallaxImg1.jpeg");
+		background-image: url("images/parallaxImg.jpg");
 	}
 	#logo > img{
 		left: 27%;
