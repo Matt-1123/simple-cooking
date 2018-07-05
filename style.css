@@ -114,14 +114,20 @@ body, html{
 	width: 100%;
 	text-align: center;
 	color: #fff;
-	font-size: 27px;
+	font-size: 16px;
 	letter-spacing: 8px;  
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 @media (max-width: 480px){
 	.ptext{
 		font-size: 16px;
+=======
+@media (min-width: 480px){
+	.ptext{
+		font-size: 27px;
+>>>>>>> master
 	}
 }
 
