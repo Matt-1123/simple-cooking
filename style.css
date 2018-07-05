@@ -86,6 +86,7 @@ body, html{
 	background-attachment: fixed; /*this makes it parallax*/
 }
 
+/* SC logo positioned in center of parallax image */
 #logo > img{
 	height: 150px;
 	display: block;
@@ -106,6 +107,7 @@ body, html{
 	}	
 }
 
+/* Simple Cooking text over parallax image */
 .ptext{
 	position: absolute; /*positioned relative to ancestor element*/
 	top: 50%; /*vertically centered*/
@@ -130,6 +132,7 @@ body, html{
 	padding: 20px;
 }
 
+/* Scroll down button over parallax image */
 #scroll-down{
 	position: absolute;
 	top: 85%;
@@ -148,6 +151,8 @@ body, html{
 #scroll-down:hover {opacity: .5;}
 
 /* ------------------INDEX PAGE 2------------------- */
+
+/* Container for kitchen icons */
 #icon-container{
 	display: flex;
 	align-items: center;
@@ -156,18 +161,21 @@ body, html{
 	background: #ff9900;
 }
 
+/* Three kitchen icon pictures (pot, cutting board, bowl) */
 .kitchen-icon{
 	flex: 1;
 	flex-basis: 30%;
 	justify-content: space-between;
 }
 
+/* Hide kitchen icons for desktop view */
 @media(min-width: 480px) {
 	#icon-container{
 		display: none;
 	}
 }
 
+/* Container for 'Welcome to Simple Cooking' text */
 #welcome-container{
 	width: 100%;
 	height: 75%;
@@ -178,6 +186,7 @@ body, html{
 	background: #3385ff;
 }
 
+/* 'Welcome to Simple Cooking' heading */
 h2{
 	text-align: center;
 	font-size: 2em;
@@ -188,18 +197,21 @@ h2{
 	padding-top: 30px;
 }
 
+/* top padding for 'Welcome to Simple Cooking' header for mobile view */
 @media(max-width: 480px){
 	h2{
 		padding-top: 10px;
 	}
 }
 
+/* Welcome text */
 #welcome{
 	color: #fff;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 18px;
 }
 
+/* Container for round links (breakfast, appetizers, entrees) */
 #round-link-container{
 	margin-top: 30px;
 	padding: 0 5px 10px 5px;
@@ -207,7 +219,7 @@ h2{
 	justify-content: space-between;
 }
 
-/*-----------desktop styling---------*/
+/* Adjust welcome message styling and remove round links for desktop view */
 @media(min-width: 480px) {
 	#round-link-container{
 		display: none;
@@ -286,8 +298,9 @@ h2{
 	}
 }
 
+/* Desktop view of category columns (breakfast, appetizers, entrees) */
 .desktop-list{
-	flex: 1; /*default*/
+	flex: 1; 
 	flex-basis: 30%;
 	justify-content: space-between;
 	color: #000;
@@ -295,11 +308,11 @@ h2{
 	margin-top: 15px;
 	margin-bottom: 80px;
 }
-
 .desktop-list:first-child{background: #c0dbe2;}
 .desktop-list:nth-child(2){background: #ccb9da;}
 .desktop-list:last-child{background: #cdf1c3;}
 
+/* Category column headers (breakfast, appetizers, entrees) for desktop view */
 h3{
 	text-transform: uppercase;
 	font-family: Georgia;
@@ -310,6 +323,7 @@ h3{
 
 }
 
+/* Recipe list items for each category column */
 .list li{
 	border: 2px #000 solid;
 	width: 80%;
