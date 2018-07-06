@@ -87,13 +87,20 @@ body, html{
 }
 
 /* SC logo positioned in center of parallax image */
+#logo{
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	display: block;
+	top: 10%;
+	margin: 0 auto;
+} 
+
 #logo > img{
 	height: 150px;
 	display: block;
-	top: 20%;
 	margin: 0 auto;
-	/* left: 43%; find better way to center */
-} 
+}
 
 @media(max-width: 480px){
 	/* .parallaxImg{
@@ -164,7 +171,7 @@ body, html{
 /* Three kitchen icon pictures (pot, cutting board, bowl) */
 .kitchen-icon{
 	flex: 1;
-	flex-basis: 30%;
+	flex-basis: 25%;
 	justify-content: space-between;
 }
 
@@ -181,7 +188,7 @@ body, html{
 	height: 75%;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	padding-top: 10px;
+	padding: 10px 5px 0;
 	text-align: center;
 	background: #3385ff;
 }
