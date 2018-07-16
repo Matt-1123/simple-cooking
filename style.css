@@ -126,9 +126,9 @@ body, html{
 	text-transform: uppercase;
 }
 
-@media (min-width: 480px){
+@media (min-width: 812px){
 	.ptext{
-		font-size: 27px;
+		font-size: 27px; /*larger font size for desktop */
 	}
 }
 
